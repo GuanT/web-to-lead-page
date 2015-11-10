@@ -6,25 +6,6 @@
 
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script>
-
-  var eventposted=0;
-
-  $(document).ready(function(){
-    $('input.button').click(function() {
-      window.setInterval(foo, 100);
-    });
-  });
-
-  function foo(){
-    if(($(".form-submission-text").is(':visible')) && (eventposted==0)){
-      window.location = "http://www.davanti.co.nz";
-      eventposted=1;
-    }
-  }
-
-  </script>
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
@@ -32,7 +13,7 @@
 <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
 <input type=hidden name="oid" value="00D280000014ESj">
-<input type=hidden name="retURL" value="http://">
+<input type=hidden name="retURL" value="http://google.com">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -47,19 +28,6 @@
 <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
 
 <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-
-<label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
-
-<label for="state">State/Province</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
-
-<label for="country">Country</label><input  id="country" maxlength="40" name="country" size="20" type="text" /><br>
-
-<label for="lead_source">Lead Source</label><select  id="lead_source" name="lead_source"><option value="">--None--</option><option value="Web">Web</option>
-<option value="Phone Inquiry">Phone Inquiry</option>
-<option value="Partner Referral">Partner Referral</option>
-<option value="Purchased List">Purchased List</option>
-<option value="Other">Other</option>
-</select><br>
 
 <input type="submit" name="submit">
 
